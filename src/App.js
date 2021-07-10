@@ -1,6 +1,7 @@
 import "./App.css";
 import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
 import Icons from "./Components/Icons";
+import Toast from "./Components/Toast";
 
 function Home() {
   return (
@@ -9,6 +10,9 @@ function Home() {
       <ol>
         <li>
           <Link to="/icons">Icons</Link>
+        </li>
+        <li>
+          <Link to="/toast">Toast</Link>
         </li>
       </ol>
     </div>
@@ -22,6 +26,9 @@ function App() {
         <Switch>
           <Route path="/icons">
             <Icons />
+          </Route>
+          <Route path="/toast">
+            <Toast />
           </Route>
           <Route exact path="/">
             <Home />
