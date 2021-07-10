@@ -2,6 +2,7 @@ import "./App.css";
 import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
 import Icons from "./Components/Icons";
 import Toast from "./Components/Toast";
+import Modal from "./Components/ModalPage";
 
 function Home() {
   return (
@@ -13,6 +14,9 @@ function Home() {
         </li>
         <li>
           <Link to="/toast">Toast</Link>
+        </li>
+        <li>
+          <Link to="/modal">Modal</Link>
         </li>
       </ol>
     </div>
@@ -29,6 +33,9 @@ function App() {
           </Route>
           <Route path="/toast">
             <Toast />
+          </Route>
+          <Route path="/modal">
+            <Modal />
           </Route>
           <Route exact path="/">
             <Home />
