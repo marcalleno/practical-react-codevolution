@@ -8,6 +8,7 @@ import Countup from "./Components/Countup";
 import IdleTimer from "./Components/IdleTimerPage";
 import ColorPicker from "./Components/ColorPicker";
 import CreditCard from "./Components/CreditCard";
+import DatePicker from "./Components/DatePickerPage";
 
 function Home() {
   return (
@@ -37,6 +38,9 @@ function Home() {
         </li>
         <li>
           <Link to="/creditcard">Credit Card</Link>
+        </li>
+        <li>
+          <Link to="/datepicker">Date Picker</Link>
         </li>
       </ol>
     </div>
@@ -71,6 +75,9 @@ function App() {
           </Route>
           <Route path="/creditcard">
             <CreditCard />
+          </Route>
+          <Route path="/datepicker">
+            <DatePicker />
           </Route>
           <Route exact path="/">
             <Home />
