@@ -5,6 +5,7 @@ import Toast from "./Components/Toast";
 import Modal from "./Components/ModalPage";
 import Tooltip from "./Components/Tooltip";
 import Countup from "./Components/Countup";
+import IdleTimer from "./Components/IdleTimerPage";
 
 function Home() {
   return (
@@ -25,6 +26,9 @@ function Home() {
         </li>
         <li>
           <Link to="/countup">Countup</Link>
+        </li>
+        <li>
+          <Link to="/idletimer">Idle Timer</Link>
         </li>
       </ol>
     </div>
@@ -50,6 +54,9 @@ function App() {
           </Route>
           <Route path="/countup">
             <Countup />
+          </Route>
+          <Route path="/idletimer">
+            <IdleTimer />
           </Route>
           <Route exact path="/">
             <Home />
