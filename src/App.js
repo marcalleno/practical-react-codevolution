@@ -4,6 +4,7 @@ import Icons from "./Components/Icons";
 import Toast from "./Components/Toast";
 import Modal from "./Components/ModalPage";
 import Tooltip from "./Components/Tooltip";
+import Countup from "./Components/Countup";
 
 function Home() {
   return (
@@ -21,6 +22,9 @@ function Home() {
         </li>
         <li>
           <Link to="/tooltip">Tooltip</Link>
+        </li>
+        <li>
+          <Link to="/countup">Countup</Link>
         </li>
       </ol>
     </div>
@@ -43,6 +47,9 @@ function App() {
           </Route>
           <Route path="/tooltip">
             <Tooltip />
+          </Route>
+          <Route path="/countup">
+            <Countup />
           </Route>
           <Route exact path="/">
             <Home />
