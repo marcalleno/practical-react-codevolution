@@ -1,14 +1,15 @@
 import "./App.css";
 import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
-import Icons from "./Components/Icons";
-import Toast from "./Components/Toast";
-import Modal from "./Components/ModalPage";
-import Tooltip from "./Components/Tooltip";
-import Countup from "./Components/Countup";
-import IdleTimer from "./Components/IdleTimerPage";
-import ColorPicker from "./Components/ColorPicker";
-import CreditCard from "./Components/CreditCard";
-import DatePicker from "./Components/DatePickerPage";
+import Icons from "./components/Icons";
+import Toast from "./components/Toast";
+import Modal from "./components/ModalPage";
+import Tooltip from "./components/Tooltip";
+import Countup from "./components/Countup";
+import IdleTimer from "./components/IdleTimerPage";
+import ColorPicker from "./components/ColorPicker";
+import CreditCard from "./components/CreditCard";
+import DatePicker from "./components/DatePickerPage";
+import Video from "./components/Video";
 
 function Home() {
   return (
@@ -41,6 +42,9 @@ function Home() {
         </li>
         <li>
           <Link to="/datepicker">Date Picker</Link>
+        </li>
+        <li>
+          <Link to="/video">Video</Link>
         </li>
       </ol>
     </div>
@@ -78,6 +82,9 @@ function App() {
           </Route>
           <Route path="/datepicker">
             <DatePicker />
+          </Route>
+          <Route path="/video">
+            <Video />
           </Route>
           <Route exact path="/">
             <Home />
