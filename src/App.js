@@ -3,6 +3,7 @@ import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
 import Icons from "./Components/Icons";
 import Toast from "./Components/Toast";
 import Modal from "./Components/ModalPage";
+import Tooltip from "./Components/Tooltip";
 
 function Home() {
   return (
@@ -17,6 +18,9 @@ function Home() {
         </li>
         <li>
           <Link to="/modal">Modal</Link>
+        </li>
+        <li>
+          <Link to="/tooltip">Tooltip</Link>
         </li>
       </ol>
     </div>
@@ -36,6 +40,9 @@ function App() {
           </Route>
           <Route path="/modal">
             <Modal />
+          </Route>
+          <Route path="/tooltip">
+            <Tooltip />
           </Route>
           <Route exact path="/">
             <Home />
