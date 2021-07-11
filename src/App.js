@@ -6,6 +6,7 @@ import Modal from "./Components/ModalPage";
 import Tooltip from "./Components/Tooltip";
 import Countup from "./Components/Countup";
 import IdleTimer from "./Components/IdleTimerPage";
+import ColorPicker from "./Components/ColorPicker";
 
 function Home() {
   return (
@@ -29,6 +30,9 @@ function Home() {
         </li>
         <li>
           <Link to="/idletimer">Idle Timer</Link>
+        </li>
+        <li>
+          <Link to="/colorpicker">Color Picker</Link>
         </li>
       </ol>
     </div>
@@ -57,6 +61,9 @@ function App() {
           </Route>
           <Route path="/idletimer">
             <IdleTimer />
+          </Route>
+          <Route path="/colorpicker">
+            <ColorPicker />
           </Route>
           <Route exact path="/">
             <Home />
