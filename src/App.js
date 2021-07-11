@@ -7,6 +7,7 @@ import Tooltip from "./Components/Tooltip";
 import Countup from "./Components/Countup";
 import IdleTimer from "./Components/IdleTimerPage";
 import ColorPicker from "./Components/ColorPicker";
+import CreditCard from "./Components/CreditCard";
 
 function Home() {
   return (
@@ -33,6 +34,9 @@ function Home() {
         </li>
         <li>
           <Link to="/colorpicker">Color Picker</Link>
+        </li>
+        <li>
+          <Link to="/creditcard">Credit Card</Link>
         </li>
       </ol>
     </div>
@@ -64,6 +68,9 @@ function App() {
           </Route>
           <Route path="/colorpicker">
             <ColorPicker />
+          </Route>
+          <Route path="/creditcard">
+            <CreditCard />
           </Route>
           <Route exact path="/">
             <Home />
