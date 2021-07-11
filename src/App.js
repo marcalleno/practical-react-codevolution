@@ -10,6 +10,7 @@ import ColorPicker from "./components/ColorPicker";
 import CreditCard from "./components/CreditCard";
 import DatePicker from "./components/DatePickerPage";
 import Video from "./components/Video";
+import Loading from "./components/Loading";
 
 function Home() {
   return (
@@ -45,6 +46,9 @@ function Home() {
         </li>
         <li>
           <Link to="/video">Video</Link>
+        </li>
+        <li>
+          <Link to="/loading">Loading</Link>
         </li>
       </ol>
     </div>
@@ -85,6 +89,9 @@ function App() {
           </Route>
           <Route path="/video">
             <Video />
+          </Route>
+          <Route path="/loading">
+            <Loading />
           </Route>
           <Route exact path="/">
             <Home />
