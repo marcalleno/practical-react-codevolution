@@ -11,6 +11,7 @@ import CreditCard from "./components/CreditCard";
 import DatePicker from "./components/DatePickerPage";
 import Video from "./components/Video";
 import Loading from "./components/Loading";
+import Chart from "./components/Chart";
 
 function Home() {
   return (
@@ -49,6 +50,9 @@ function Home() {
         </li>
         <li>
           <Link to="/loading">Loading</Link>
+        </li>
+        <li>
+          <Link to="/chart">Chart</Link>
         </li>
       </ol>
     </div>
@@ -92,6 +96,9 @@ function App() {
           </Route>
           <Route path="/loading">
             <Loading />
+          </Route>
+          <Route path="/chart">
+            <Chart />
           </Route>
           <Route exact path="/">
             <Home />

@@ -3,6 +3,16 @@
   margin-left: 1rem;
 }
 
+.App-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chart {
+  width: 720px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
